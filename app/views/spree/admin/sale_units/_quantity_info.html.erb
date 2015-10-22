@@ -1,0 +1,25 @@
+<style type="text/css">
+  .quantity-info {
+      display: inline-block;
+      width: 80%;
+  }
+</style>
+
+<script type="text/javascript">
+  $(function() {
+      $('a[data-toggle="tooltip"]').tooltip();
+  })
+</script>
+
+<% unless @product.sale_unit.name.nil? %>
+    <% @sold_by = @product.sale_unit.name %>
+<% else %>
+    <% @sold_by = 'item' %>
+<% end %>
+
+<span class="quantity-info">Quantity is per <%= @sold_by %><% unless @product.sale_unit.description.nil? %>
+    <a href="#" data-toggle="tooltip"
+       title="<%= @product.sale_unit.description.html_safe %>"
+       class="glyphicon glyphicon-question-sign"
+       aria-hidden="true"></a>
+  <% end %></span>
