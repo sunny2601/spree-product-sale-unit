@@ -3,6 +3,14 @@
       display: inline-block;
       width: 80%;
   }
+
+  .quantity-info a {
+      font-size: 1.25em;
+  }
+
+  .quantity-info a:hover {
+      text-decoration: none;
+  }
 </style>
 
 <script type="text/javascript">
@@ -17,7 +25,7 @@
     <% @sold_by = 'item' %>
 <% end %>
 
-<span class="quantity-info">Quantity is per <%= @sold_by %>
+<span class="quantity-info">quantity by <%= @sold_by %>
 <% unless @product.sale_unit.nil? || @product.sale_unit.description.blank? %>
 <a href="#" data-toggle="tooltip"
    title="<%= @product.sale_unit.description.html_safe %>"
