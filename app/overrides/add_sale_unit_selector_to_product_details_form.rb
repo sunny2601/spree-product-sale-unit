@@ -1,4 +1,5 @@
 Deface::Override.new(
+    :original => 'd15e8881a009c5e287070eb034df4c7a81b52758',
     :virtual_path => 'spree/admin/products/_form',
     :name => 'add_sale_unit_selector_to_product_details_form',
     :insert_bottom => '[data-hook="admin_product_form_left"]',
