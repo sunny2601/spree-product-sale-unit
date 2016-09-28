@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_sale_unit'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.summary     = 'Units that products are sold by (e.g. "Roll", "Double Roll", "Two 25” x 50” sheets") and descriptive text if needed'
   s.description = 'Units that products are sold by (e.g. "Roll", "Double Roll", "Two 25” x 50” sheets") and descriptive text if needed'
   s.required_ruby_version = '>= 2.0.0'
