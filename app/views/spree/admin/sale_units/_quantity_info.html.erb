@@ -1,24 +1,3 @@
-<style type="text/css">
-  .quantity-info {
-      display: inline-block;
-      width: 80%;
-  }
-
-  .quantity-info a {
-      font-size: 1.25em;
-  }
-
-  .quantity-info a:hover {
-      text-decoration: none;
-  }
-</style>
-
-<script type="text/javascript">
-  $(function() {
-      $('a[data-toggle="tooltip"]').tooltip();
-  })
-</script>
-
 <% unless @product.sale_unit.nil? %>
     <% @sold_by = @product.sale_unit.name %>
 <% else %>
